@@ -4,7 +4,24 @@
     appearance: none
     background-color: var(--ryf-button-bgColor, #F7C873)
     color: var(--ryf-button-color, #171717)
+    margin: 0
+    padding: 0
     border: none
     outline: none
-    font-family: Outfit
-    font-size: $default-font-size-rem
+    font-family: $secondary-font
+    font-weight: bold
+    font-size: 1.2rem
+    letter-spacing: 0.1rem
+    border-radius: var(--ryf-button-borderRadius, 60px)
+    width: 20.6rem
+    height: 4.8rem
+    transition: .2s background-color
+    cursor: pointer
+
+    &:hover, &:focus
+        background-color: var(--ryf-button-bgHoverColor, #cca65f)
+
+    .button__content
+        display: flex
+        justify-content: center
+        align-items: center
