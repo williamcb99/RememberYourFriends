@@ -1,4 +1,4 @@
-import styles from ".Button.module.sass"
+import styles from "./Button.module.sass"
 
 type ButtonProps = Readonly<{
     children: string
