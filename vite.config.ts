@@ -9,6 +9,7 @@ export default defineConfig({
     react(),
     dts(),
   ],
+
   build: {
     lib: {
       entry: resolve(__dirname, "src/main.tsx"),
