@@ -4,6 +4,7 @@ enum AnimalType {
 }
 
 export type Animal = {
+    Id: number;
     Name: string;
     AnimalType: AnimalType;
     IsMale: boolean;
