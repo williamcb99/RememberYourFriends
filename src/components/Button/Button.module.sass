@@ -19,13 +19,15 @@
     transition: .2s background-color
     cursor: pointer
 
-
-    &:hover, &:focus
-        background-color: var(--ryf-button-bgHoverColor, #cca65f)
-
     &.button__ghost
         background-color: transparent
         border: 0.2rem solid var(--ryf-button-borderColor, #F7C873)
+
+
+    &:hover, &:focus
+        background-color: var(--ryf-button-bgHoverColor, #cca65f)
+        border-color: var(--ryf-button-bgHoverColor, #cca65f)
+
 
 .button__content
     display: flex
