@@ -9,10 +9,8 @@ type ButtonProps = Readonly<{
 
 export const Button = (props: ButtonProps) => {
     return (
-        <button onClick={props.onClick} className={`${styles["button"]} ${props.className}`}>
-            <span className="">
+        <button onClick={props.onClick} className={`${styles["button"]} ${styles[`${props.className}`]}`}>
                 <span className={styles["button__content"]}>{props.children}</span>
-            </span>
         </button>
 
     )
