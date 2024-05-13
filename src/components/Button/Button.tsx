@@ -1,8 +1,8 @@
-import { MouseEventHandler } from "react"
+import { MouseEventHandler, ReactNode } from "react"
 import styles from "./Button.module.sass"
 
 type ButtonProps = Readonly<{
-    children: string,
+    children: ReactNode,
     className?: string,
     onClick?: MouseEventHandler<HTMLButtonElement>,
 }>
@@ -10,7 +10,9 @@ type ButtonProps = Readonly<{
 export const Button = (props: ButtonProps) => {
     return (
         <button onClick={props.onClick} className={`${styles["button"]} ${props.className}`}>
-            <span className={styles["button__content"]}>{props.children}</span>
+            <span className="">
+                <span className={styles["button__content"]}>{props.children}</span>
+            </span>
         </button>
 
     )
