@@ -6,6 +6,7 @@
     color: var(--ryf-button-color, #171717)
     margin: 0
     padding: 0
+    box-sizing: border-box
     border: none
     outline: none
     font-family: $secondary-font
@@ -22,10 +23,12 @@
     &:hover, &:focus
         background-color: var(--ryf-button-bgHoverColor, #cca65f)
 
+    &.button__ghost
+        background-color: transparent
+        border: 0.2rem solid var(--ryf-button-borderColor, #F7C873)
+
 .button__content
     display: flex
     justify-content: center
     align-items: center
 
-.button__ghost
-    background-color: red !important
