@@ -17,7 +17,9 @@ export const Card = (props: CardProps) => {
             <div className={`${styles["card__body"]}`}>
                 <div className={`${styles["card__title"]}`}>{props.Title}</div>
                 <div className={`${styles["card__category"]}`}>{props.Category}</div>
-                <Button className="button__small">Learn More</Button>
+                <div className={`${styles["card__button"]}`}>
+                    <Button className="button__small">Learn More</Button>
+                </div>
             </div>
         </div>
     )

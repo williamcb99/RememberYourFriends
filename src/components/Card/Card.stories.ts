@@ -30,7 +30,7 @@ export const DaveTheCheeseWizard: Story = {
   args: {
     Title: "Dave the Cheese Wizard",
     Category: "Bicolor Cat",
-    ImageURL: "",
-    ImageAltText: ""
+    ImageURL: "http://localhost:3000/img/davethecheesewizard.jpg",
+    ImageAltText: `Image of a bicolor cat named Dave the Cheese Wizard`
   },
 };
