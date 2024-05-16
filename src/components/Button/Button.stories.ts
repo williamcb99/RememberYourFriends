@@ -35,9 +35,16 @@ export const SendForm: Story = {
   },
 };
 
-export const Ghost: Story = {
+export const GhostButton: Story = {
   args: {
     children: "Ghost Button",
     className: "button__ghost"
+  },
+};
+
+export const SmallButton: Story = {
+  args: {
+    children: "Learn More",
+    className: "button__small"
   },
 };
