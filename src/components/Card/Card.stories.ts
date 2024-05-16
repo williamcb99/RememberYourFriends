@@ -3,7 +3,7 @@ import { Card } from './Card';
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Components/Button',
+  title: 'Components/Card',
   component: Card,
   parameters: {
     layout: 'centered',
@@ -19,5 +19,18 @@ type Story = StoryObj<typeof meta>;
 // More on writing stories with args: https://storybook.js.org/docs/writing-stories/args
 export const Default: Story = {
   args: {
+    Title: "",
+    Category: "",
+    ImageURL: "",
+    ImageAltText: ""
+  },
+};
+
+export const DaveTheCheeseWizard: Story = {
+  args: {
+    Title: "Dave the Cheese Wizard",
+    Category: "Bicolor Cat",
+    ImageURL: "",
+    ImageAltText: ""
   },
 };
