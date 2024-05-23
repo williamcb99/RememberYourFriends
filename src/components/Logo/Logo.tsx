@@ -1,16 +1,13 @@
 import styles from "./Logo.module.sass"
 import { LogoSVG } from "../../assets/LogoSVG";
 
-type LogoProps = Readonly<{
-    Height: number,
-    Width: number,
-    Children: string
-}>;
 
-export const Logo = (props: LogoProps) => {
+export const Logo = () => {
     return (
-        <div className={`${styles["logo__container"]}`}>
-            <LogoSVG {...props}/>
+        <div className={`${styles["logo"]}`}>
+            <div className={`${styles["logo__svg"]}`}>
+                <LogoSVG/>
+            </div>
         </div>
     );
 };

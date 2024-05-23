@@ -1,11 +1,10 @@
-import { Button } from "./components"
+import { Logo } from "./components"
 
 function App() {
 
   return (
     <>
-      <p>hej</p>
-      <Button>Available Cats</Button>
+      <Logo/>
     </>
   )
 }
