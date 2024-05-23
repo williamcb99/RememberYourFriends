@@ -3,8 +3,8 @@ import { Button } from "../Button/Button"
 
 type CardProps = Readonly<{
     Title: string,
-    Category: string
-    ImageURL: string
+    Category: string,
+    ImageURL: string,
     ImageAltText: string
 }>
 
