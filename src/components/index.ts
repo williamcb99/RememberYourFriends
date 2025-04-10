@@ -1,3 +1,2 @@
-export { Button } from "./Button/Button"
-
-export { Logo } from "./Logo/Logo"
+export { LandingPage } from "./LandingPage/LandingPage"
+export { HomePage } from "./HomePage/HomePage"

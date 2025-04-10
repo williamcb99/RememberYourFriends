@@ -1,14 +1,14 @@
 import styles from "./NavBar.module.sass"
 
 type NavBarProps = Readonly<{
-    Text1: string,
-    Link1: string,
-    Text2: string,
-    Link2: string,
-    Text3: string,
-    Link3: string,
-    Text4: string,
-    Link4: string,
+    Text1?: string,
+    Link1?: string,
+    Text2?: string,
+    Link2?: string,
+    Text3?: string,
+    Link3?: string,
+    Text4?: string,
+    Link4?: string,
 }>
 
 export const NavBar = (props: NavBarProps) => {
